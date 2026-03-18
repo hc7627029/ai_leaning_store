@@ -1,6 +1,6 @@
 ---
-name：solution-optimization
-description：根据用户用户提供的原始解决方案文档，判断所属类型，按相应模版进行结构与内容优化，展现产品价值。
+name: solution-optimization
+description: 根据用户用户提供的原始解决方案文档，判断所属类型，按相应模版进行结构与内容优化，展现产品价值。
 ---
 
 # solution-optimization
