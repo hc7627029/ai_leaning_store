@@ -52,9 +52,11 @@ description: |
 
 ```
 调用工具：
-- `project_listEvent` (thinkingengine-mcp) → 获取项目中所有已埋点的事件及其中英文名称
-- `project_loadFiltProps`(thinkingengine-mcp) → 获取全量属性（含类型、描述、tableType）
-- `project_listMetricInfos` (thinkingengine-mcp) → 获取预定义指标（可选），查看项目中已预定义的指标/公式，如果用户需求刚好有现成指标/标签/分群等，可以复用。
+- `mcp__te-mcp-analysis__list_events`  → 获取项目中所有已埋点的事件及其中英文名称
+- `mcp__te-mcp-analysis__list_properties` → 获取全量属性（含类型、描述、tableType）
+- `mcp__te-mcp-analysis__list_metrics `或 `mcp__te-mcp-analysis__project_listMetricInfos` → 获取预定义指标（可选），查看项目中已预定义的指标/公式，如果用户需求刚好有现成指标/标签/分群等，可以复用。
+- `mcp__te-mcp-analysis__list_tags`  → 获取项目中的用户标签元数据
+- `mcp__te-mcp-analysis__list_clusters`  → 获取项目中的用户分群元数据
 ```
 
 ### 1.3 意图解析与字段映射
