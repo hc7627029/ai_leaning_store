@@ -261,7 +261,7 @@ ORDER BY 1
 
 ---
 
-### 5. Distribution Analysis (scatter/distribution)
+### 5. Distribution Analysis
 
 **Core Positioning**: Divide metric values into ranges, get user count and proportion in each range. Analyze user engagement depth and stickiness for certain feature.
 
@@ -290,7 +290,7 @@ ORDER BY 1
 
 ---
 
-### 7. Composition Analysis (composition)
+### 7. Property Analysis (prop_analysis)
 
 **Core Positioning**: Profile analysis based on user properties (not behavioral events), support two-dimension cross analysis and group comparison. Answer "who are users / what do users look like".
 
@@ -316,7 +316,7 @@ ORDER BY 1
 
 ---
 
-### 9. Ranking (rank)
+### 9. Ranking (rank_list)
 
 **Core Positioning**: Rank dimensions by metric value size, show Top N leaderboard, can track ranking changes.
 
@@ -330,7 +330,7 @@ ORDER BY 1
 
 ---
 
-### 10. Heatmap (heatmap)
+### 10. Heatmap (heat_map)
 
 **Core Positioning**: Flexibly show user heat distribution in each region on game map or application interface. Game industry specific needs.
 
