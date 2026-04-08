@@ -19,8 +19,8 @@ description: |
 metadata:
   version: "1.0.0"
   dependencies:
-    - thinkingengine-mcp
-    - te-mcp
+    - mcp__te-mcp-analysis
+
 ---
 
 # 用户标签体系设计助手
