@@ -530,11 +530,11 @@ def generate_excel_report(results, summary, standard_tracking):
 
 **子表1：TE模型可行性评估**
 
-| 序号 | 需求类别 | 具体分析需求 | 推荐TE模型 | 是否能实现 | ✅ xlsx中已有的事件/属性 | ❌ 完全缺失的事件/属性 | 不能/部分能的原因 | 替代方案/建议 | 
-|-----|---------|------------|----------|----------|------------------|--------------|---------------------|----------------|------------|---------|
-| 1 | 新增用户 | 查看每天新增用户情况 | 事件分析(event) | 不能 | 无直接匹配事件 | 无 | xlsx中没有register事件。| 新增register事件 |
-| 2 | 活跃用户 | 查看每天活跃用户数 | 事件分析(event) | 能 | xlsx事件: app_start_up(游戏启动) | 无 | 无 | 事件app_start_up, 指标触发用户数, 粒度天 | 
-| 3 | 付费分析 | 查看付费金额总和 | 事件分析(event) | 不能 | xlsx事件: purchase_complete(付费完成)——仅有gift_id(文本)和product_id(文本) | ❌ purchase_complete事件缺少pay_amount(付费金额,数值)属性 | purchase_complete只有gift_id和product_id两个文本属性,无金额字段,无法通过事件求和得到「每日总付费金额」 | 必须在xlsx中为purchase_complete添加pay_amount(数值)属性 | 
+| 序号 | 需求类别 | 具体分析需求 | 推荐TE模型 | 是否能实现 | ✅ xlsx中已有的事件/属性 | ❌ 完全缺失的事件/属性 | 不能/部分能的原因 | 替代方案/建议 |
+|:---|:---|:---|:---|:---|:---|:---|:---|:---|
+| 1 | 新增用户 | 查看每天新增用户情况 | 事件分析(event) | 不能 | 无直接匹配事件 | 无 | xlsx中没有register事件 | 新增register事件 |
+| 2 | 活跃用户 | 查看每天活跃用户数 | 事件分析(event) | 能 | xlsx事件: app_start_up(游戏启动) | 无 | 无 | 事件app_start_up, 指标触发用户数, 粒度天 |
+| 3 | 付费分析 | 查看付费金额总和 | 事件分析(event) | 不能 | xlsx事件: purchase_complete(付费完成) | ❌ purchase_complete事件缺少pay_amount属性 | 仅有gift_id和product_id, 无金额字段 | 必须为purchase_complete添加pay_amount(数值)属性 |
 
 **子表2：汇总统计**
 
